@@ -1,0 +1,22 @@
+.header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $primary-color;
+    background-color: $secondary-color;
+}
+
+.header-nav {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.header-nav-list {
+    display: flex;
+    justify-content: space-between;
+
+    & a {
+        color: $primary-color;
+        font-weight: 600;
+    }
+}

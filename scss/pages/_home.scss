@@ -1,0 +1,110 @@
+.page {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.main {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & h3 {
+        padding: 20px 0;
+        text-align: center;
+    }
+}
+
+.main-title {
+    text-align: center;
+}
+
+.about-me {
+    background-color: $secondary-color-opacity;
+    padding: 0 20px 20px 20px;
+    margin-top: 20px;
+    line-height: 1.5;
+    & p {
+        padding-bottom: 20px;
+        text-align: justify;
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+    & a {
+        color: $primary-color;
+        &:hover {
+            color: $terciary-color;
+        }
+    }
+}
+
+.about-me-hello {
+    font-weight: 600;
+}
+
+.projects {
+    & h4 {
+        margin-left: 15px;
+    }
+}
+
+.projects-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-container {
+    display: flex;
+}
+
+.project-box {
+    display: flex;
+    border: 2px solid $secondary-color;
+    border-radius: 5px;
+    position: relative;
+    margin: 20px;
+    & img {
+        width: 250px;
+        height: 130px;
+        object-fit: cover;
+    }
+    & div {
+        width: 250px;
+        height: 130px;
+        padding: 10px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        & p {
+            font-size: 0;
+        }
+        &:hover {
+            background-color: $secondary-color-projects;
+            & p {
+                font-size: 16px;
+                color: $primary-color;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.contact {
+    background-color: $secondary-color-opacity;
+    padding: 0 20px 20px 20px;
+    margin-top: 20px;
+    line-height: 1.5;
+    text-align: center;
+    & a {
+        color: $primary-color;
+        font-weight: 600;
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+}
