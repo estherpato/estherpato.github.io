@@ -4,7 +4,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous">
     <title>Esther Pato | Portfolio</title>
     <link rel="stylesheet" href="css/main.css">
   </head>
@@ -15,23 +16,25 @@
         <nav class="header-nav">
           <ul class="header-nav-list">
             <li><a href="#about-me">About me</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-      </header>
-      <main id="main" class="main">
-        <div class="main-title">
+        <div class="header-title">
           <h1>Esther Pato González</h1>
           <h2>Front end Developer</h2>
         </div>
-        <section id="about-me" class="about-me">
+      </header>
+      <main id="main" class="main">
+        <div class="anchor" id="about-me"></div>
+        <section class="about-me">
           <h3>About me</h3>
           <p>
             <span class="about-me-hello">Hello there!</span>
           </p>
           <p>
-            I am Esther Pato, junior front end developer after studying in <a href="https://adalab.es/" target="_blank"
+            I am Esther and became front end developer after studying in <a href="https://adalab.es/" target="_blank"
               rel="noopener noreferrer">Adalab</a>.
           </p>
           <p>
@@ -46,7 +49,21 @@
             personally.
           </p>
         </section>
-        <section id="projects" class="projects">
+        <div class="anchor" id="skills"></div>
+        <section class="skills">
+          <h3>Technical skills</h3>
+          <ul>
+            <li>vanilla JavaScript</li>
+            <li>React</li>
+            <li>ECMAScript 6</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>SASS</li>
+            <li>Git</li>
+          </ul>
+        </section>
+        <section class="projects">
+          <div class="anchor" id="projects"></div>
           <h3>Projects</h3>
           <h4>Grupal projects</h4>
           <div class="projects-wrapper">
@@ -118,7 +135,8 @@
             </div>
           </div>
         </section>
-        <div id="contact" class="contact">
+        <div class="anchor" id="contact"></div>
+        <div class="contact">
           <h3>Contact</h3>
           <p>If you want to contact me, please send me a mail to:</p>
           <a href="mailto:estherpato@gmail.com" target="_blank" rel="noopener noreferrer">estherpato@gmail.com</a>

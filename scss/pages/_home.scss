@@ -14,11 +14,6 @@
     }
 }
 
-.main-title {
-    text-align: center;
-    padding: 20px 0;
-}
-
 .about-me {
     background-color: $secondary-color-opacity;
     padding: 0 20px 20px 20px;
@@ -110,4 +105,8 @@
             color: $secondary-color;
         }
     }
+}
+
+.anchor {
+    height: 25px;
 }

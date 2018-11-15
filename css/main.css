@@ -79,23 +79,44 @@ h1,h2,h3,h4 {
 }
 
 .header {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.header-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0 20px;
   height: 50px;
+  background-color: #C4AAAF;
+  border-bottom: 1px solid #7D141D;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-bottom: 1px solid #7D141D;
-  background-color: #C4AAAF;
-}
-
-.header-nav {
-  width: 100%;
-  padding: 0 20px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  z-index: 1;
 }
 
 .header-nav-list {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -107,6 +128,15 @@ h1,h2,h3,h4 {
 .header-nav-list a {
   color: #7D141D;
   font-weight: 600;
+}
+
+.header-title {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.header-title h1 {
+  font-size: 75px;
 }
 
 .page {
@@ -133,11 +163,6 @@ h1,h2,h3,h4 {
 .main h3 {
   padding: 20px 0;
   text-align: center;
-}
-
-.main-title {
-  text-align: center;
-  padding: 20px 0;
 }
 
 .about-me {
@@ -261,6 +286,10 @@ h1,h2,h3,h4 {
 
 .contact a:hover {
   color: #C4AAAF;
+}
+
+.anchor {
+  height: 25px;
 }
 
 /*# sourceMappingURL=main.css.map */
