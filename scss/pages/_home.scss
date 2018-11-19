@@ -9,15 +9,14 @@
     flex-direction: column;
     align-items: center;
     & h3 {
-        padding: 20px 0;
+        padding-bottom: 20px;
         text-align: center;
     }
 }
 
 .about-me {
     background-color: $secondary-color-opacity;
-    padding: 0 20px 20px 20px;
-    margin-top: 20px;
+    padding: 40px 20px 40px 20px;
     line-height: 1.5;
     & p {
         padding-bottom: 20px;
@@ -38,7 +37,19 @@
     font-weight: 600;
 }
 
+.skills {
+    padding: 20px 20px 40px 20px;
+    width: 100%;
+    & ul {
+        text-align: center;
+    }
+}
+
 .projects {
+    background-color: rgba(196, 170, 175, 0.5);
+    padding: 20px 20px 40px 20px;
+    line-height: 1.5;
+    width: 100%;
     & h4 {
         margin-left: 15px;
     }
@@ -53,11 +64,12 @@
 
 .project-container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .project-box {
     display: flex;
-    border: 2px solid $secondary-color;
     border-radius: 5px;
     position: relative;
     margin: 20px;
@@ -66,17 +78,28 @@
         height: 130px;
         object-fit: cover;
     }
-    & div {
+}
+
+.project-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & p {
+        font-size: 12px;
+        color: black;
+    }
+    & p:first-child {
+        margin-top: 10px;
+    }
+
+    @media all and (min-width: 1024px) {
         width: 250px;
         height: 130px;
         padding: 10px;
         position: absolute;
         top: 0;
         right: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         & p {
             font-size: 0;
         }
@@ -92,9 +115,7 @@
 }
 
 .contact {
-    background-color: $secondary-color-opacity;
-    padding: 0 20px 20px 20px;
-    margin-top: 20px;
+    padding: 20px 20px 40px 20px;
     line-height: 1.5;
     text-align: center;
     width: 100%;
@@ -108,5 +129,5 @@
 }
 
 .anchor {
-    height: 25px;
+    height: 20px;
 }

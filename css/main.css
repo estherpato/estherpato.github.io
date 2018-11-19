@@ -161,14 +161,13 @@ h1,h2,h3,h4 {
 }
 
 .main h3 {
-  padding: 20px 0;
+  padding-bottom: 20px;
   text-align: center;
 }
 
 .about-me {
   background-color: rgba(196, 170, 175, 0.5);
-  padding: 0 20px 20px 20px;
-  margin-top: 20px;
+  padding: 40px 20px 40px 20px;
   line-height: 1.5;
 }
 
@@ -193,6 +192,22 @@ h1,h2,h3,h4 {
   font-weight: 600;
 }
 
+.skills {
+  padding: 20px 20px 40px 20px;
+  width: 100%;
+}
+
+.skills ul {
+  text-align: center;
+}
+
+.projects {
+  background-color: rgba(196, 170, 175, 0.5);
+  padding: 20px 20px 40px 20px;
+  line-height: 1.5;
+  width: 100%;
+}
+
 .projects h4 {
   margin-left: 15px;
 }
@@ -215,13 +230,19 @@ h1,h2,h3,h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .project-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 2px solid #C4AAAF;
   border-radius: 5px;
   position: relative;
   margin: 20px;
@@ -234,13 +255,7 @@ h1,h2,h3,h4 {
   object-fit: cover;
 }
 
-.project-box div {
-  width: 250px;
-  height: 130px;
-  padding: 10px;
-  position: absolute;
-  top: 0;
-  right: 0;
+.project-description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -256,24 +271,17 @@ h1,h2,h3,h4 {
   align-items: center;
 }
 
-.project-box div p {
-  font-size: 0;
+.project-description p {
+  font-size: 12px;
+  color: black;
 }
 
-.project-box div:hover {
-  background-color: rgba(196, 170, 175, 0.9);
-}
-
-.project-box div:hover p {
-  font-size: 16px;
-  color: #7D141D;
-  text-align: center;
+.project-description p:first-child {
+  margin-top: 10px;
 }
 
 .contact {
-  background-color: rgba(196, 170, 175, 0.5);
-  padding: 0 20px 20px 20px;
-  margin-top: 20px;
+  padding: 20px 20px 40px 20px;
   line-height: 1.5;
   text-align: center;
   width: 100%;
@@ -289,7 +297,32 @@ h1,h2,h3,h4 {
 }
 
 .anchor {
-  height: 25px;
+  height: 20px;
+}
+
+@media all and (min-width: 1024px) {
+  .project-description {
+    width: 250px;
+    height: 130px;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .project-description p {
+    font-size: 0;
+  }
+
+  .project-description:hover {
+    background-color: rgba(196, 170, 175, 0.9);
+  }
+
+  .project-description:hover p {
+    font-size: 16px;
+    color: #7D141D;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
