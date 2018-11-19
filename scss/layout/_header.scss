@@ -18,7 +18,21 @@
     align-items: center;
     justify-content: center;
     z-index: 1;
-
+    @media all and (min-width: 768px) {
+        padding: 0 100px;
+        height: 70px;
+        font-size: 20px;
+    }
+    @media all and (min-width: 1024px) {
+        padding: 0 150px;
+        height: 80px;
+        font-size: 24px;
+    }
+    @media all and (min-width: 1440px) {
+        padding: 0 250px;
+        height: 80px;
+        font-size: 24px;
+    }
 }
 
 .header-nav-list {

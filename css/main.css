@@ -297,10 +297,90 @@ h1,h2,h3,h4 {
 }
 
 .anchor {
-  height: 20px;
+  height: 50px;
+}
+
+@media all and (min-width: 768px) {
+  .header-nav {
+    padding: 0 100px;
+    height: 70px;
+    font-size: 20px;
+  }
+
+  .main {
+    background-color: white;
+    margin: 20px;
+    border-radius: 20px;
+    -webkit-box-shadow: 5px 5px 10px lightgrey;
+    box-shadow: 5px 5px 10px lightgrey;
+  }
+
+  .main h3 {
+    font-size: 24px;
+    padding-bottom: 30px;
+  }
+
+  .about-me {
+    background-color: transparent;
+    padding: 40px;
+  }
+
+  .about-me p {
+    font-size: 18px;
+  }
+
+  .skills {
+    font-size: 18px;
+  }
+
+  .projects {
+    background-color: transparent;
+  }
+
+  .projects h4 {
+    margin-left: 20px;
+    font-size: 20px;
+  }
+
+  .project-description p {
+    font-size: 14px;
+  }
+
+  .contact {
+    font-size: 18px;
+  }
 }
 
 @media all and (min-width: 1024px) {
+  .header-nav {
+    padding: 0 150px;
+    height: 80px;
+    font-size: 24px;
+  }
+
+  .main {
+    margin: 40px;
+  }
+
+  .main h3 {
+    font-size: 28px;
+    padding-bottom: 40px;
+  }
+
+  .about-me {
+    padding: 40px 60px;
+  }
+
+  .projects h4 {
+    margin-left: 50px;
+    font-size: 24px;
+  }
+
+  .projects h4 {
+    margin-left: 100px;
+    margin-bottom: 20px;
+  }
+
   .project-description {
     width: 250px;
     height: 130px;
@@ -322,6 +402,22 @@ h1,h2,h3,h4 {
     font-size: 16px;
     color: #7D141D;
     text-align: center;
+  }
+}
+
+@media all and (min-width: 1440px) {
+  .header-nav {
+    padding: 0 250px;
+    height: 80px;
+    font-size: 24px;
+  }
+
+  .main {
+    margin: 150px;
+  }
+
+  .about-me {
+    padding: 40px 100px;
   }
 }
 

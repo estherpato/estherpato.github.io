@@ -12,6 +12,26 @@
         padding-bottom: 20px;
         text-align: center;
     }
+    @media all and (min-width: 768px) {
+        background-color: white;
+        margin: 20px;
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px lightgrey;
+        & h3 {
+            font-size: 24px;
+            padding-bottom: 30px;
+        }
+    }
+    @media all and (min-width: 1024px) {
+        margin: 40px;
+        & h3 {
+            font-size: 28px;
+            padding-bottom: 40px;
+        }
+    }
+    @media all and (min-width: 1440px) {
+        margin: 150px;
+    }
 }
 
 .about-me {
@@ -31,6 +51,19 @@
             color: $terciary-color;
         }
     }
+    @media all and (min-width: 768px) {
+        background-color: transparent;
+        padding: 40px;
+        & p {
+            font-size: 18px;
+        }
+    }
+    @media all and (min-width: 1024px) {
+        padding: 40px 60px;
+    }
+    @media all and (min-width: 1440px) {
+        padding: 40px 100px;
+    }
 }
 
 .about-me-hello {
@@ -43,6 +76,9 @@
     & ul {
         text-align: center;
     }
+    @media all and (min-width: 768px) {
+        font-size: 18px;
+    }
 }
 
 .projects {
@@ -52,6 +88,25 @@
     width: 100%;
     & h4 {
         margin-left: 15px;
+    }
+    @media all and (min-width: 768px) {
+        background-color: transparent;
+        & h4 {
+            margin-left: 20px;
+            font-size: 20px;
+        }
+    }
+    @media all and (min-width: 1024px) {
+        & h4 {
+            margin-left: 50px;
+            font-size: 24px;
+        }
+    }
+    @media all and (min-width: 1024px) {
+        & h4 {
+            margin-left: 100px;
+            margin-bottom: 20px;
+        }
     }
 }
 
@@ -92,7 +147,11 @@
     & p:first-child {
         margin-top: 10px;
     }
-
+    @media all and (min-width: 768px) {
+        & p {
+            font-size: 14px;
+        }
+    }
     @media all and (min-width: 1024px) {
         width: 250px;
         height: 130px;
@@ -126,8 +185,11 @@
             color: $secondary-color;
         }
     }
+    @media all and (min-width: 768px) {
+        font-size: 18px;
+    }
 }
 
 .anchor {
-    height: 20px;
+    height: 50px;
 }
