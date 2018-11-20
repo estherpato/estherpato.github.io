@@ -102,6 +102,7 @@ h1,h2,h3,h4 {
   width: 100%;
   position: fixed;
   top: 0;
+  z-index: 1;
 }
 
 .nav-btn {
@@ -147,6 +148,8 @@ h1,h2,h3,h4 {
 }
 
 .header-nav-list {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -181,7 +184,12 @@ h1,h2,h3,h4 {
 }
 
 .hidden {
-  display: none;
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-transition: -webkit-transform ease 1s;
+  transition: -webkit-transform ease 1s;
+  transition: transform ease 1s;
+  transition: transform ease 1s, -webkit-transform ease 1s;
 }
 
 .header-title {
@@ -355,6 +363,18 @@ h1,h2,h3,h4 {
 }
 
 @media all and (min-width: 768px) {
+  .header-nav-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 75%;
+  }
+
+  .header-nav-list a {
+    padding: 0 20px;
+  }
+
   .main {
     background-color: white;
     margin: 20px;
