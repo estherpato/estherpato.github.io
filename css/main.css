@@ -95,14 +95,16 @@ h1,h2,h3,h4 {
   justify-content: center;
 }
 
-.header-nav {
+.header-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
   position: fixed;
   top: 0;
-  width: 100%;
-  padding: 0 20px;
-  height: 50px;
-  background-color: #C4AAAF;
-  border-bottom: 1px solid #7D141D;
+}
+
+.nav-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,22 +114,74 @@ h1,h2,h3,h4 {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  z-index: 1;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+}
+
+.nav-btn.open {
+  background-color: #7D141D;
+  color: #C4AAAF;
+}
+
+.nav-btn.open:hover {
+  background-color: #C4AAAF;
+  color: #7D141D;
+}
+
+.nav-btn.close {
+  background-color: #C4AAAF;
+  color: #7D141D;
+}
+
+.nav-btn.close:hover {
+  background-color: #7D141D;
+  color: #C4AAAF;
+}
+
+.header-nav {
+  background-color: #C4AAAF;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 .header-nav-list {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  line-height: 2.8;
+  font-size: 18px;
+}
+
+.header-nav-list li {
+  width: 100%;
 }
 
 .header-nav-list a {
+  display: block;
   color: #7D141D;
   font-weight: 600;
+  text-align: center;
+}
+
+.header-nav-list a:hover {
+  color: #C4AAAF;
+  background-color: #7D141D;
+}
+
+.hidden {
+  display: none;
 }
 
 .header-title {
@@ -301,12 +355,6 @@ h1,h2,h3,h4 {
 }
 
 @media all and (min-width: 768px) {
-  .header-nav {
-    padding: 0 100px;
-    height: 70px;
-    font-size: 20px;
-  }
-
   .main {
     background-color: white;
     margin: 20px;
@@ -352,12 +400,6 @@ h1,h2,h3,h4 {
 }
 
 @media all and (min-width: 1024px) {
-  .header-nav {
-    padding: 0 150px;
-    height: 80px;
-    font-size: 24px;
-  }
-
   .main {
     margin: 40px;
   }
@@ -406,12 +448,6 @@ h1,h2,h3,h4 {
 }
 
 @media all and (min-width: 1440px) {
-  .header-nav {
-    padding: 0 250px;
-    height: 80px;
-    font-size: 24px;
-  }
-
   .main {
     margin: 150px;
   }
